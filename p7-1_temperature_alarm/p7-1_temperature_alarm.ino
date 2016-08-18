@@ -22,7 +22,7 @@ void loop() {
 
   if (data > tempThres) {
     for (int x = 0; x < 180; x++) {
-      toneVal = 2000 + int(sin(x * pi / 180)* 1000);
+      toneVal = 2000 + int(sin(x * pi / 180) * 1000);
       tone(buzzPin, toneVal);
       delay(2);
     }
